@@ -15,7 +15,7 @@ class Formatter {
     except.forEach( element => {
       stringArr.forEach( str => {
         if (element !== str) {
-          str.toUpperCase()
+          str = str.toUpperCase()
         }
       })
     })
