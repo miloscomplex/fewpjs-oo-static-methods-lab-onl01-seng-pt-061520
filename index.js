@@ -16,7 +16,7 @@ class Formatter {
     const excludeWords = ["the", "a", "an", "but", "of", "and", "for", "at", "by", "from"]
     stringArr = string.split(" ")
     return stringArr.map((word, index) => {
-      return excludeWords.includes(word) && index!=0 ? [word] : word.charAt(0).toUpperCase() + word.slice(1)
+      return excludeWords.includes(word) && index!=0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
     }).join(' ')
   }
 }
